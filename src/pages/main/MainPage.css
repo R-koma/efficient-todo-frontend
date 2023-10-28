@@ -1,0 +1,12 @@
+.mainPage {
+  display: flex;
+}
+.mainPageLeft {
+  flex: 4;
+}
+.mainPageCenter {
+  flex: 4;
+}
+.mainPageRight {
+  flex: 4;
+}

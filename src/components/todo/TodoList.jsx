@@ -12,7 +12,7 @@ const TodoList = ({ todos, onComplete, onDelete }) => {
               className="todoCheckBox"
               onClick={() => onComplete(todo._id)}
             />
-            {todo.title}
+            <div className="todoTitle">{todo.title}</div>
             <button
               className="todoDeleteButton"
               onClick={() => onDelete(todo._id)}

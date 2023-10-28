@@ -16,7 +16,7 @@ const Complete = () => {
   return (
     <>
       <div className="completePage">
-        <h1>Complete Page</h1>
+        <h1 className="completePageTitle">完了したタスク</h1>
         <div className="completePageArea">
           <CompleteList completes={completes} />
         </div>

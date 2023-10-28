@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import TodoList from "./TodoList";
+import "./TodoPage.css";
 
 const TodoPage = () => {
   const [title, setTitle] = useState("");
@@ -47,26 +48,26 @@ const TodoPage = () => {
   return (
     <>
       <div className="todoPage">
-        <h1>Todo Page</h1>
+        <h1 className="todoPageTitle">今日のタスク</h1>
         <div className="inputWrapper">
-          <input
-            type="text"
-            className="taskInput"
-            value={title}
-            placeholder="Add Task"
-            onChange={(e) => setTitle(e.target.value)}
-          />
           <form className="taskInputButton" onSubmit={(e) => handleSubmit(e)}>
+            <input
+              type="text"
+              className="taskInput"
+              value={title}
+              placeholder="Add Task"
+              onChange={(e) => setTitle(e.target.value)}
+            />
             <button type="submit" className="addTaskInputButton">
               Add
             </button>
           </form>
+          <TodoList
+            todos={todos}
+            onComplete={completeTodo}
+            onDelete={todoDeleteButton}
+          />
         </div>
-        <TodoList
-          todos={todos}
-          onComplete={completeTodo}
-          onDelete={todoDeleteButton}
-        />
       </div>
     </>
   );

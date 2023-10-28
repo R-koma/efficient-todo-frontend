@@ -1,0 +1,66 @@
+.todoPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(28, 28, 28);
+  /* border-right: 1px solid rgb(80, 80, 80); */
+  color: white;
+  height: 100vh;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(35, 35, 35);
+  border-radius: 5px;
+  border: 1px solid rgb(80, 80, 80);
+  width: 80%;
+  height: 70%;
+  padding: 10px;
+  gap: 20px;
+}
+
+.taskInputButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.taskInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid rgb(80, 80, 80);
+  padding: 5px;
+  background-color: rgb(47, 47, 47);
+  color: white;
+}
+
+.taskInput:focus {
+  outline: none;
+}
+
+.addTaskInputButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 95%;
+  border-radius: 5px;
+  border: 1px solid rgb(80, 80, 80);
+  background-color: rgb(47, 47, 47);
+  color: white;
+  font-weight: bold;
+}
+
+.todoPageTitle {
+  font-size: 22px;
+}

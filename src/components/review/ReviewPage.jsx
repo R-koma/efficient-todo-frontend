@@ -50,7 +50,7 @@ const ReviewPage = () => {
   return (
     <>
       <div className="reviewPage">
-        <h1>ReviewPage</h1>
+        <h1 className="reviewPageTitle">復習タスク</h1>
         <div className="reviewPageArea">
           <ReviewList
             reviews={reviews}

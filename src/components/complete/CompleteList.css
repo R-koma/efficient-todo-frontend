@@ -1,0 +1,38 @@
+.completeList {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+
+.completeListWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.completeListTitle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.completeListTitle:hover {
+  background-color: rgb(47, 47, 47);
+}
+
+.completeTitle {
+  margin-left: 5px;
+  width: 100%;
+}
