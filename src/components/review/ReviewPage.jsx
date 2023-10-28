@@ -29,7 +29,9 @@ const ReviewPage = () => {
   const completeTodo = async (id) => {
     try {
       await axios.put(`/review/${id}/complete`);
-      setReviews(reviews.filter((review) => review._id !== id));
+      setReviews((prevReviews) =>
+        prevReviews.filter((review) => review._id !== id)
+      );
     } catch (err) {
       console.log(err);
     }
@@ -38,7 +40,9 @@ const ReviewPage = () => {
   const todoDeleteButton = async (id) => {
     try {
       await axios.delete(`/review/${id}`);
-      setReviews(reviews.filter((review) => review._id !== id));
+      setReviews((prevReviews) =>
+        prevReviews.filter((review) => review._id !== id)
+      );
     } catch (err) {
       console.log(err);
     }

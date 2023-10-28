@@ -47,6 +47,7 @@ const TodoPage = () => {
   return (
     <>
       <div className="todoPage">
+        <h1>Todo Page</h1>
         <div className="inputWrapper">
           <input
             type="text"
