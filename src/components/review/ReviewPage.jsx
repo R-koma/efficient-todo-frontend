@@ -12,7 +12,19 @@ const ReviewPage = () => {
       setReviews(response.data);
     };
     fetchReviews();
+
+    // 1分ごとにタスクを再取得
+    const intervalId = setInterval(fetchReviews, 60000);
+    return () => clearInterval(intervalId);
   }, [reviews]);
+
+  // useEffect(() => {
+  //   const fetchReviewsTime = async () => {
+  //     const response = await axios.get(`/review/${id}`);
+  //     setReviews(response.data);
+  //   };
+  //   fetchReviewsTime();
+  // }, []);
 
   const completeTodo = async (id) => {
     try {
