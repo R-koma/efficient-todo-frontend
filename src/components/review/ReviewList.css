@@ -36,6 +36,23 @@
   cursor: pointer;
 }
 
+.reviewCheckBox .fa-circle {
+  display: inline-block;
+}
+
+.reviewCheckBox .fa-check {
+  display: none;
+}
+
+.reviewCheckBox:hover .fa-circle {
+  display: none;
+}
+
+.reviewCheckBox:hover .fa-check {
+  display: inline-block;
+  color: rgb(167, 108, 222);
+}
+
 .reviewTitle {
   margin-left: 5px;
   width: 100%;

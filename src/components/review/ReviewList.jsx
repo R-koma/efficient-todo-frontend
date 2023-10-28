@@ -8,11 +8,13 @@ const ReviewList = ({ reviews, onComplete, onDelete }) => {
         <ul className="reviewListWrapper">
           {reviews.map((review) => (
             <li className="reviewListTitle" key={review._id}>
-              <input
-                type="checkbox"
+              <div
                 className="reviewCheckBox"
                 onClick={() => onComplete(review._id)}
-              />
+              >
+                <i className="fa-regular fa-circle"></i>
+                <i className="fa-solid fa-check"></i>
+              </div>
               <div className="reviewTitle">{review.title}</div>
               <button
                 className="reviewDeleteButton"

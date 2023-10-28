@@ -7,11 +7,10 @@ const TodoList = ({ todos, onComplete, onDelete }) => {
       <ul className="todoListWrapper">
         {todos.map((todo) => (
           <li className="todoListTitle" key={todo._id}>
-            <input
-              type="checkbox"
-              className="todoCheckBox"
-              onClick={() => onComplete(todo._id)}
-            />
+            <div className="todoCheckBox" onClick={() => onComplete(todo._id)}>
+              <i className="fa-regular fa-circle"></i>
+              <i className="fa-solid fa-check"></i>
+            </div>
             <div className="todoTitle">{todo.title}</div>
             <button
               className="todoDeleteButton"

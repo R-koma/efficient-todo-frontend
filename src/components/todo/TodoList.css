@@ -36,6 +36,23 @@
   cursor: pointer;
 }
 
+.todoCheckBox .fa-circle {
+  display: inline-block;
+}
+
+.todoCheckBox .fa-check {
+  display: none;
+}
+
+.todoCheckBox:hover .fa-circle {
+  display: none;
+}
+
+.todoCheckBox:hover .fa-check {
+  display: inline-block;
+  color: rgb(167, 108, 222);
+}
+
 .todoTitle {
   margin-left: 5px;
   width: 100%;
