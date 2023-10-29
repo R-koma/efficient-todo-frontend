@@ -13,12 +13,24 @@ const Complete = () => {
     };
     fetchCompletes();
   }, [completes]);
+
+  const todoDeleteButton = async (id) => {
+    try {
+      await axios.delete(`/complete/${id}`);
+      setCompletes((prevCompletes) =>
+        prevCompletes.filter((complete) => complete._id !== id)
+      );
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <>
       <div className="completePage">
-        <h1 className="completePageTitle">完了したタスク</h1>
         <div className="completePageArea">
-          <CompleteList completes={completes} />
+          <h2 className="completePageTitle">完了したタスク</h2>
+          <CompleteList completes={completes} onDelete={todoDeleteButton} />
         </div>
       </div>
     </>

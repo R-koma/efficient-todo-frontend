@@ -50,8 +50,8 @@ const ReviewPage = () => {
   return (
     <>
       <div className="reviewPage">
-        <h1 className="reviewPageTitle">復習タスク</h1>
         <div className="reviewPageArea">
+          <h2 className="reviewPageTitle">復習タスク</h2>
           <ReviewList
             reviews={reviews}
             onComplete={completeTodo}

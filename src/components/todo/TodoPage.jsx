@@ -48,8 +48,8 @@ const TodoPage = () => {
   return (
     <>
       <div className="todoPage">
-        <h1 className="todoPageTitle">今日のタスク</h1>
         <div className="inputWrapper">
+          <h2 className="todoPageTitle">今日のタスク</h2>
           <form className="taskInputButton" onSubmit={(e) => handleSubmit(e)}>
             <input
               type="text"
