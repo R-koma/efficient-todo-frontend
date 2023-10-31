@@ -10,3 +10,15 @@
 .mainPageRight {
   flex: 4;
 }
+
+@media (max-width: 600px) {
+  .mainPage {
+    flex-direction: column;
+  }
+
+  .mainPageLeft,
+  .mainPageCenter,
+  .mainPageRight {
+    width: 95%;
+  }
+}
