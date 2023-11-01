@@ -5,7 +5,7 @@
   justify-content: center;
   background-color: rgb(28, 28, 28);
   /* border-right: 1px solid rgb(80, 80, 80); */
-  color: white;
+  color: rgb(163, 153, 153);
   height: 100vh;
 }
 
@@ -41,7 +41,7 @@
   border: 1px solid rgb(80, 80, 80);
   padding: 5px;
   background-color: rgb(47, 47, 47);
-  color: white;
+  color: rgb(163, 153, 153);
 }
 
 .taskInput:focus {
@@ -57,10 +57,12 @@
   border-radius: 5px;
   border: 1px solid rgb(80, 80, 80);
   background-color: rgb(47, 47, 47);
-  color: white;
+  color: rgb(163, 153, 153);
   font-weight: bold;
 }
 
 .todoPageTitle {
   font-size: 22px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Serif JP", serif;
 }

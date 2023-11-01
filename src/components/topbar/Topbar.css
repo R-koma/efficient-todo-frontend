@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(35, 34, 34);
+  border-bottom: 1px solid rgb(58, 57, 57);
+}
+
+.logo {
+  color: rgb(163, 153, 153);
+  padding: 10px 5px 0px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Serif JP", serif;
+}

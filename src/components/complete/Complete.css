@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(28, 28, 28);
-  color: white;
+  color: rgb(163, 153, 153);
   height: 100vh;
 }
 
@@ -25,4 +25,6 @@
 
 .completePageTitle {
   font-size: 22px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Serif JP", serif;
 }

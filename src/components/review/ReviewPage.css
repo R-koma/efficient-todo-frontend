@@ -6,7 +6,7 @@
   justify-content: center;
   background-color: rgb(28, 28, 28);
   /* border-right: 1px solid rgb(80, 80, 80); */
-  color: white;
+  color: rgb(163, 153, 153);
   height: 100vh;
 }
 
@@ -26,4 +26,6 @@
 
 .reviewPageTitle {
   font-size: 22px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Serif JP", serif;
 }
