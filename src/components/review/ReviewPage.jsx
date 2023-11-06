@@ -18,14 +18,6 @@ const ReviewPage = () => {
     return () => clearInterval(intervalId);
   }, [reviews]);
 
-  // useEffect(() => {
-  //   const fetchReviewsTime = async () => {
-  //     const response = await axios.get(`/review/${id}`);
-  //     setReviews(response.data);
-  //   };
-  //   fetchReviewsTime();
-  // }, []);
-
   const completeTodo = async (id) => {
     try {
       await axios.put(`/review/${id}/complete`);
